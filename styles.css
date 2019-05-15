@@ -1,0 +1,15 @@
+/* ELEMENTS */
+.logo{
+    max-height: .75em;
+}
+
+/* PAGES */
+#about{
+    display: block;
+}
+#portfolio{
+    display: none
+}
+#contact{
+    display: none
+}

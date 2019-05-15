@@ -74,6 +74,24 @@ header{
     margin-left: 7%;
     margin-top: 5%;
 }
+#portfolio h1{
+    margin-left: 2.75em;
+    font-size: 3em;
+    border-left: 2px solid #215200;
+    border-top: 1px solid #215200;
+    padding: 1em;
+    border-radius: 0 15% 0 15%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.portfolioContain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 7%;
+    margin-top: 2%;
+}
 .project{
     width: 35%;
     margin: 5%;
@@ -126,10 +144,31 @@ input, textarea{
 input{
     height: 2em;
 }
+input:focus, textarea:focus{
+    border: 3px solid #D240B2;
+}
 textarea{
     vertical-align: top;
     height: 5em;
 }
+.contactButton{
+    width: 80%;
+    border-left: 2px solid #215200;
+    border-bottom: 1px solid #215200;
+    height: 3em;
+    padding-bottom: .5em;
+    border-radius: 25% 0 34% 0;
+
+}
 button{
-    margin-left: 10em;
+    margin-left: 3em;
+    margin-top: 10%;
+    height: 1.5em;
+    font-family: 'Gruppo', cursive;
+    font-size: 1em;
+    border-radius: 5%;
+    color: #D240B2;
+}
+button:hover{
+    border: 2px solid #D240B2;
 }

@@ -8,16 +8,19 @@ const portfolioButton = document.getElementById('portfolioButton')
 const contactButton = document.getElementById('contactButton')
 //navigation functions
 let goHome = function(){
+    aboutButton.style.display='none';
     about.style.display='block';
     portfolio.style.display='none';
     contact.style.display='none'
 }
 let goPortfolio = function(){
+    aboutButton.style.display='flex';
     about.style.display='none';
     portfolio.style.display='block';
     contact.style.display='none'
 }
 let goContact = function(){
+    aboutButton.style.display='flex';
     about.style.display='none';
     portfolio.style.display='none';
     contact.style.display='block'

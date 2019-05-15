@@ -16,14 +16,14 @@ let goHome = function(){
 let goPortfolio = function(){
     aboutButton.style.display='flex';
     about.style.display='none';
-    portfolio.style.display='block';
+    portfolio.style.display='flex';
     contact.style.display='none'
 }
 let goContact = function(){
     aboutButton.style.display='flex';
     about.style.display='none';
     portfolio.style.display='none';
-    contact.style.display='block'
+    contact.style.display='flex'
 }
 
 //event listeners

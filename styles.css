@@ -21,6 +21,9 @@ a{
     text-decoration: none;
     margin-bottom: 4%;
 }
+a:hover{
+    color: white;
+}
 .btn:hover{
     color: white;
 }
@@ -51,6 +54,7 @@ header{
     display: none;
 }
 /* PAGES */
+/* ABOUT */
 #about{
     display: block;
     width: 50%;
@@ -61,9 +65,71 @@ header{
     padding: 2em;
     border-radius: 30% 0 34% 0;
 }
+/* PORTFOLIO */
 #portfolio{
-    display: none
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 7%;
+    margin-top: 5%;
 }
+.project{
+    width: 35%;
+    margin: 5%;
+    border-top: 3px solid white;
+    border-right: 1px solid white;
+    padding: 1em;
+}
+.project h2{
+    font-size: 2em;
+}
+.projectGit{
+    max-width: .5em;
+}
+/* CONTACT */
 #contact{
-    display: none
+    display: none;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-size: 1.5em;
+    border: 3px solid white;
+    padding: 1em;
+    align-items: center;
+}
+#contact p{
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    margin-top: 5%;
+}
+#contactForm{
+    margin-left: 3em;
+}
+form{
+    padding: 1em;
+}
+label{
+    width: 35%;
+    margin: 1em;
+    margin-left: 0;
+}
+input, textarea{
+    width: 75%;
+    box-sizing: border-box;
+    border: 1px solid #215200;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+input{
+    height: 2em;
+}
+textarea{
+    vertical-align: top;
+    height: 5em;
+}
+button{
+    margin-left: 10em;
 }

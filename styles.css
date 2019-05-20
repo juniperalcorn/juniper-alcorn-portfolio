@@ -32,6 +32,11 @@ a:hover{
     margin-right: 10%;
     font-size: 1.5em;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .nav{
     display: flex;
     flex-direction: row;
@@ -73,7 +78,6 @@ a:hover{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-left: 7%;
     margin-top: 5%;
 }
 #portfolio h1{
@@ -206,7 +210,7 @@ button:hover{
     flex-direction: column;
     flex-wrap: none;
     margin: 0 auto;
-    margin-left: 1%;
+    margin-left: 0;
     margin-top: 5%;
 }
 #portfolio h1{
@@ -235,20 +239,6 @@ button:hover{
     padding: 1em;
 }
 .project h2{
-    font-size: 2em;
-}
-.projectGit{
-    max-width: .5em;
-}
-.projectGit:hover{
-    border: 2px solid #D240B2;
-}
-.projPic{
-    max-width: 18em;
-    border: 1px solid white;
-    border-radius: 15px;
-}
-.projPic:hover{
-    border: 2px solid #D240B2;
+    font-size: 1.75em;
 }
 }

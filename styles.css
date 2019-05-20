@@ -107,6 +107,17 @@ header{
 .projectGit{
     max-width: .5em;
 }
+.projectGit:hover{
+    border: 2px solid #D240B2;
+}
+.projPic{
+    max-width: 21em;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.projPic:hover{
+    border: 2px solid #D240B2;
+}
 /* CONTACT */
 #contact{
     display: none;

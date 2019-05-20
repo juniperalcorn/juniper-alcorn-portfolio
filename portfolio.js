@@ -10,26 +10,26 @@ const contactButton = document.getElementById('contactButton')
 let goHome = function(){
     aboutButton.style.display='none';
     portfolioButton.style.display='flex';
-    contactButton.style.display='flex';
+    // contactButton.style.display='flex';
     about.style.display='block';
     portfolio.style.display='none';
-    contact.style.display='none'
+    // contact.style.display='none'
 }
 let goPortfolio = function(){
     aboutButton.style.display='flex';
     portfolioButton.style.display='none';
-    contactButton.style.display='flex';
+    // contactButton.style.display='flex';
     about.style.display='none';
     portfolio.style.display='flex';
-    contact.style.display='none'
+    // contact.style.display='none'
 }
 let goContact = function(){
     aboutButton.style.display='flex';
     portfolioButton.style.display='flex';
-    contactButton.style.display='none';
+    // contactButton.style.display='none';
     about.style.display='none';
     portfolio.style.display='none';
-    contact.style.display='flex'
+    // contact.style.display='flex'
 }
 
 //event listeners

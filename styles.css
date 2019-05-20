@@ -4,15 +4,7 @@ body{
     color: white; 
     font-family: 'Gruppo', cursive;
 }
-/* h1{
-    color: white;
-}
-h2{
-    color: white;
-}
-h3{
-    color: white;
-}*/
+
 p{
     text-align: justify;
 } 
@@ -56,14 +48,24 @@ header{
 /* PAGES */
 /* ABOUT */
 #about{
+    background-image: url('assets/nyc.jpg');
+}
+#bio{
     display: block;
+    background-color: black;
     width: 50%;
-    margin: 0 auto;
-    margin-top: 15%;
+    margin: 3% auto;
+    margin-top: 8%;
     border-left: 3px solid #215200;
     border-bottom: 1px solid #215200;
     padding: 2em;
     border-radius: 30% 0 34% 0;
+}
+#bio h1{
+    text-align: center;
+}
+#bio h3{
+    text-align: center;
 }
 /* PORTFOLIO */
 #portfolio{

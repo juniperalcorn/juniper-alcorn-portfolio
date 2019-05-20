@@ -5,62 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Juniper Alcorn</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type='image/png' href='assets/juniper-ico.png'>
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Marck+Script|Monoton|Varela" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco|Gruppo|Gugi|Lancelot|Overlock+SC|Stint+Ultra+Expanded" rel="stylesheet">
 </head>
 
 <header>
     <p>Juniper Alcorn</p>
-    <button id='aboutButton'>About</button>
-    <button id='portfolioButton'>Portfolio</button>
-    <button id='contactButton'>Contact</button>
+    <div class='nav'>
+        <div class='btn' id='aboutButton'>About</div>
+        <div class='btn' id='portfolioButton'>Portfolio</div>
+        <!-- <div class='btn' id='contactButton'>Contact</div> -->
+    </div>
 </header>
 <body>
 
 <div id='about'>
-    <h1>Juniper Alcorn, PhD</h1>
-    <p>I am a highly analytical and creative software engineer who holds over six years’ experience working as a philosophy professor. In answering both life’s greatest questions and complex coding challenges, I believe that logic and and structural thinking are fundamental to creating meaningful solutions that foster real change. I strive to work in a collaborative and empathetic environment where there is consistent opportunity to grow as both a scholar and practitioner.</p>
-    <a href='https://www.linkedin.com/in/juniper-alcorn/'><img class='logo' src='assets/In-White-26.png' alt='LinkedIn logo'>LinkedIn</a> <br/>
-    <a href='https://github.com/juniperalcorn'><img class='logo' src='assets/GitHub-Mark-32px.png' alt='github logo'>GitHub</a>
+    <div id='bio'>
+        <h1>Juniper Alcorn, PhD</h1>
+        <h3>Software Engineer and Philosophy PhD</h3>
+        <br />
+        <p>I am a highly analytical and creative software engineer who holds over six years’ experience working as a philosophy professor.</p> 
+        <p>In answering both life’s greatest questions and complex coding challenges, I believe that logic and and structural thinking are fundamental to creating meaningful solutions that foster real change.</p> 
+        <p>I strive to work in a collaborative and empathetic environment where there is consistent opportunity to grow as both a scholar and practitioner.</p>
+        <a href='https://www.linkedin.com/in/juniper-alcorn/'><img class='logo' src='assets/In-White-26.png' alt='LinkedIn logo'>LinkedIn</a> <br/>
+        <a href='https://github.com/juniperalcorn'><img class='logo' src='assets/GitHub-Mark-Light-32px.png' alt='github logo'>GitHub</a>
+    </div>  
 </div>
 
 <div id='portfolio'>
 
-    <div class='project'>
-        <h2>Kitty Jungle</h2>
-        <p>HTML, CSS, Vanilla JS</p>
-        <a href='#'><img class='projPic' src='' alt='Kitty Jungle picture'></a>
-    </div>
+    <h1>Portfolio</h1>
+    <div class='portfolioContain'>
+        <div class='project'>
+            <h2><a href='http://mypillbox.surge.sh/'>myPillBox</a> <a href='https://github.com/juniperalcorn/myPillBox'> <img class='projectGit' src='assets/GitHub-Mark-Light-32px.png'></a></h2>
+            <p>HTML, CSS, React, JSX, Ruby, Ruby on Rails, Sequelize</p>
+            <p>myPillBox is a digital pill box and daily medication organizer app built with custom bycrypt auth. At a glance, myPillBox provides the time of day and intuitive navigation to a list of the pills you should be taking at which time of day, or a complete list of the doses assocated with a particular prescription.</p>
+            <br />
+            <a href='http://mypillbox.surge.sh'><img class='projPic' src='assets/myPillBox.png' alt='myPillBox picture'></a>
+        </div>
 
-    <div class='project'>
-        <h2>KnitWhich</h2>
-        <p>HTML, CSS, React, JSX</p>
-        <a href='#'><img class='projPic' src='' alt='Knitwhich picture'></a>
-    </div>
+        <div class='project'>
+            <h2><a href='https://knitwhich-app.herokuapp.com/'>KnitWhich</a> <a href='https://github.com/juniperalcorn/knitwhich'> <img class='projectGit' src='assets/GitHub-Mark-Light-32px.png'></a></h2>
+            <p>HTML, CSS, React, JSX</p>
+            <p>KnitWhich is a knitting utilities app, which accesses the Ravelry API. KnitWhich compliments Ravelry's incredible functionality and gives users a seamless on-the-go access to their personal Ravelry data. In addition, KnitWhich offers a Row Counters utility, where users can add and label row counters for different projects, eliminating the need for easily misplaced notions.</p>
+            <a href='knitwhich-app.herokuapp.com'><img class='projPic' src='assets/knitwhich-counters.png' alt='Knitwhich picture'></a>
+        </div>
 
-    <div class='project'>
-        <h2>Streetscapes</h2>
-        <p>HTML, CSS, React, JSX, Express, Sequelize</p>
-        <a href='#'><img class='projPic' src='' alt='Streetscapes picture'></a>
+        <div class='project'>
+            <h2><a href='http://infamous-trick.surge.sh/'>Streetstagram</a><a href='https://github.com/juniperalcorn/Streetstagram'> <img class='projectGit' src='assets/GitHub-Mark-Light-32px.png'></a></h2>
+            <p>HTML, CSS, React, JSX, Express, Sequelize</p>
+            <p>Streetstagram is a full stack app where users share streetscape photos. Streetstagram builds community by creating a platform for neighbors to share current events, artists to share their work, and for individuals to engage with each other by sharing images of their daily life. Streetstagram communicates with AWS cloud storage to host image urls.</p>
+            <a href='http://infamous-trick.surge.sh'><img class='projPic' src='assets/streetstagram-update.png' alt='Streetstagram picture'></a>
+        </div>
 
-    </div>
-
-    <div class='project'>
-        <h2>myPillBox</h2>
-        <p>HTML, CSS, React, JSX, Ruby, Ruby on Rails, Sequelize</p>
-        <a href='#'><img class='projPic' src='' alt='myPillBox picture'></a>
-
+        <div class='project'>
+            <h2><a href='https://juniperalcorn.github.io/kitty-jungle/'>Kitty Jungle</a><a href='https://github.com/juniperalcorn/kitty-jungle'> <img class='projectGit' src='assets/GitHub-Mark-Light-32px.png'></a></h2>
+            <p>HTML, CSS, Vanilla JS</p>
+            <p>Kitty Jungle is a single-player game where players carefully befriend feral cats by petting them (clicking on them). The object is to pet the cat enough to make friends, but not so much as to overstimulate the cat.</p>
+            <br />
+            <br />
+            <br />
+            <a href='https://juniperalcorn.github.io/kitty-jungle/'><img class='projPic' src='assets/kitty-jungle.png' alt='Kitty Jungle picture'></a>
+        </div>
     </div>
 </div>
 
-<div id='contact'>
+<!-- <div id='contact'>
     <p>Contact</p>
-    <form>
-        <label for='contactName'>Name:</label><input id='contactName' name='name' type='text'>
-        <label for='contactEmail'>Email:</label><input id='contactEmail' name='email' type='text'>
-        <label for='contactMsg'>Message:</label><textarea id='contactMsg' name='msg'></textarea>
+    <div id='contactForm'>
+    <form action='#' method='post'>
+        <div id='name'><label for='contactName'>Name:  </label><input id='contactName' name='name' type='text'></div>
+        
+        <div id='email'><label for='contactEmail'>Email:  </label><input id='contactEmail' name='email' type='text'></div>
+        
+        <div id='msg'><label for='contactMsg'>Message:  </label><textarea id='contactMsg' name='msg'></textarea></div>
+        <div class='contactButton'><button type='submit'>Send</button></div>
+        </div>
     </form>
-</div>
+
+</div> -->
 
 
 

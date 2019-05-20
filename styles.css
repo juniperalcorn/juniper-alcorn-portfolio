@@ -23,7 +23,7 @@ a:hover{
     max-height: .75em;
     margin-right: 4%;
 }
-header{
+#header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,6 +31,11 @@ header{
     margin-left: 5%;
     margin-right: 10%;
     font-size: 1.5em;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .nav{
     display: flex;
@@ -73,7 +78,6 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-left: 7%;
     margin-top: 5%;
 }
 #portfolio h1{
@@ -111,7 +115,7 @@ header{
     border: 2px solid #D240B2;
 }
 .projPic{
-    max-width: 21em;
+    width: 95%;
     border: 1px solid white;
     border-radius: 15px;
 }
@@ -184,4 +188,57 @@ button{
 }
 button:hover{
     border: 2px solid #D240B2;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 480px) and (min-width: 320px){
+
+/* HEADER */
+#header{
+    background: black;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* PORTFOLIO */
+#portfolio{
+    display: none;
+    flex-direction: column;
+    flex-wrap: none;
+    margin: 0 auto;
+    margin-left: 0;
+    margin-top: 5%;
+}
+#portfolio h1{
+    margin-left: 1em;
+    font-size: 2em;
+    border-left: 2px solid #215200;
+    border-top: 1px solid #215200;
+    padding: 1em;
+    border-radius: 0 15% 0 15%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.portfolioContain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    margin: 0 auto;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+.project{
+    width: 85%;
+    margin: 5%;
+    border-top: 3px solid white;
+    border-right: 1px solid white;
+    padding: 1em;
+}
+.project h2{
+    font-size: 1.75em;
+}
 }

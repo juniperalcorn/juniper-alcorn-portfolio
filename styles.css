@@ -1,4 +1,7 @@
 /* ELEMENTS */
+html {
+    scroll-behavior: smooth;
+  }
 body{
     background-color: black;
     color: white; 
@@ -74,14 +77,14 @@ a:hover{
 }
 /* PORTFOLIO */
 #portfolio{
-    display: none;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 15%;
 }
 #portfolio h1{
-    margin-left: 2.75em;
+    margin-left: 1.5em;
     font-size: 3em;
     border-left: 2px solid #215200;
     border-top: 1px solid #215200;

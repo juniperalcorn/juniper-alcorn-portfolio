@@ -10,14 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Flamenco|Gruppo|Gugi|Lancelot|Overlock+SC|Stint+Ultra+Expanded" rel="stylesheet">
 </head>
 
-<div id='header'>
-    <p>Juniper Alcorn</p>
-    <div class='nav'>
-        <div class='btn' id='aboutButton'>About</div>
-        <div class='btn' id='portfolioButton'>Portfolio</div>
-        <!-- <div class='btn' id='contactButton'>Contact</div> -->
-    </div>
-</div>
 <body>
 
 <div id='about'>
@@ -31,6 +23,15 @@
         <a href='https://www.linkedin.com/in/juniper-alcorn/'><img class='logo' src='assets/In-White-26.png' alt='LinkedIn logo'>LinkedIn</a> <br/>
         <a href='https://github.com/juniperalcorn'><img class='logo' src='assets/GitHub-Mark-Light-32px.png' alt='github logo'>GitHub</a>
     </div>  
+</div>
+
+<div class= 'header' id='headerScroll'>
+    <p id='name'>Juniper<span id='break'><br /></span> Alcorn</p>
+    <div class='nav'>
+        <div class='btn'><a href='#about'>About</a></div>
+        <div class='btn'><a href='#portfolio'>Portfolio</a></div>
+        <div class='btn'><a href='#contact'>Contact</a></div>
+    </div>
 </div>
 
 <div id='portfolio'>
@@ -70,10 +71,10 @@
     </div>
 </div>
 
-<!-- <div id='contact'>
+<div id='contact'>
     <p>Contact</p>
     <div id='contactForm'>
-    <form action='#' method='post'>
+    <form name='contact' method='POST' data-netlify='true'>
         <div id='name'><label for='contactName'>Name:  </label><input id='contactName' name='name' type='text'></div>
         
         <div id='email'><label for='contactEmail'>Email:  </label><input id='contactEmail' name='email' type='text'></div>
@@ -83,10 +84,11 @@
         </div>
     </form>
 
-</div> -->
+</div>
 
-
-
+<footer>
+&copy; Juniper Alcorn, 2019<a class='footer' href='https://www.linkedin.com/in/juniper-alcorn/'><img class='logo footer' src='assets/In-White-26.png' alt='LinkedIn logo'></a><a class='footer' href='https://github.com/juniperalcorn'><img class='logo footer' src='assets/GitHub-Mark-Light-32px.png' alt='github logo'></a>
+</footer>
 
 <script src="portfolio.js"></script>
 </body>

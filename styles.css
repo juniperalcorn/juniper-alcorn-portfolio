@@ -131,11 +131,12 @@ a:hover{
 }
 /* CONTACT */
 #contact{
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 60%;
     margin: 0 auto;
     margin-top: 10%;
+    margin-bottom: 10%;
     font-size: 1.5em;
     border: 3px solid white;
     padding: 1em;
@@ -195,6 +196,20 @@ button{
 }
 button:hover{
     border: 2px solid #D240B2;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logo.footer{
+    margin-right: 1%;
+
+}
+a.footer{
+    margin-bottom: 0;
+    padding: 0 2%;
 }
 
 /* MEDIA QUERY */

@@ -36,7 +36,7 @@ let goContact = function(){
 }
 
 function findOffset(element) {
-    let top = 0, left = 0;
+    let top = 300, left = 0;
   
     do {
       top += element.offsetTop  || 0;

@@ -26,37 +26,41 @@ a:hover{
     max-height: .75em;
     margin-right: 4%;
 }
-#header{
-    display: flex;
-    flex-direction: row;
+.header{
+    display: none;
+    flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
-    margin-left: 5%;
+    margin-left: 0;
     margin-right: 10%;
     font-size: 1.5em;
+    background: black;
 }
-.sticky {
+.fixed {
+    display: flex;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 4em;
+    margin-left: 0;
+    margin-right: 10%;
 }
 .nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 
 }
 .btn{
-    margin-left: 7%;
     color: #D240B2;
 }
 #aboutButton{
-    display: none;
+    display: flex;
 }
 /* PAGES */
 /* ABOUT */
 #about{
     background-image: url('assets/nyc.jpg');
+    margin: 13% auto;
 }
 #bio{
     display: block;
@@ -84,7 +88,7 @@ a:hover{
     margin-top: 15%;
 }
 #portfolio h1{
-    margin-left: 1.5em;
+    margin-left: 2.5em;
     font-size: 3em;
     border-left: 2px solid #215200;
     border-top: 1px solid #215200;
@@ -198,7 +202,7 @@ button:hover{
 @media screen and (max-width: 480px) and (min-width: 320px){
 
 /* HEADER */
-#header{
+.header{
     background: black;
 }
 .sticky {

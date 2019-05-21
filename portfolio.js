@@ -2,7 +2,7 @@
 const about = document.getElementById('about')
 const portfolio = document.getElementById('portfolio')
 const contact = document.getElementById('contact')
-const header = document.getElementById('header')
+const header = document.getElementById('headerScroll')
 //buttons
 const aboutButton = document.getElementById('aboutButton')
 const portfolioButton = document.getElementById('portfolioButton')
@@ -36,19 +36,38 @@ let goContact = function(){
     // contact.style.display='flex'
 }
 
-let scrolling = function(){
-    if (window.pageYOffset > sticky){
-        header.classList.add("sticky")
-    } else {
-        header.classList.remove("sticky")
-    }
+function findOffset(element) {
+    let top = 0, left = 0;
+  
+    do {
+      top += element.offsetTop  || 0;
+      left += element.offsetLeft || 0;
+      element = element.offsetParent;
+    } while(element);
+  
+    return {
+      top: top,
+      left: left
+    };
 }
+  
+window.onload = function () {
+    let stickyHeader = document.getElementById('headerScroll');
+    let headerOffset = findOffset(stickyHeader);
+    console.log(headerOffset)
+    window.onscroll = function() {
+        // body.scrollTop is deprecated and no longer available on Firefox
+        const bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+        if (bodyScrollTop > headerOffset.top) {
+        stickyHeader.classList.add('fixed');
+        } else {
+        stickyHeader.classList.remove('fixed');
+    }
+};
+}
+
 //event listeners
 aboutButton.addEventListener('click', goHome)
 portfolioButton.addEventListener('click', goPortfolio)
-contactButton.addEventListener('click', goContact)
-
-window.onscroll = function() {scrolling()}
-//functions
-
-
+// contactButton.addEventListener('click', goContact)

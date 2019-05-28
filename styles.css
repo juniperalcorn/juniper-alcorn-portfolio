@@ -38,7 +38,7 @@ a:hover{
     display: flex;
     position: fixed;
     top: 0;
-    width: 4em;
+    width: 10%;
 }
 .nav{
     display: flex;
@@ -277,5 +277,14 @@ a{
 }
 .project h2{
     font-size: 1.75em;
+}
+#contactForm{
+    margin-left: 0;
+}
+.contactButton{
+    width: 100%;
+}
+.contactButton button{
+    margin-left: 1em;
 }
 }

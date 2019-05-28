@@ -23,7 +23,6 @@ function findOffset(element) {
 window.onload = function () {
     let stickyHeader = document.getElementById('headerScroll');
     let headerOffset = findOffset(stickyHeader);
-    console.log(headerOffset)
     window.onscroll = function() {
         // body.scrollTop is deprecated and no longer available on Firefox
         const bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;

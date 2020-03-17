@@ -74,6 +74,25 @@ a{
     margin-right: 10%;
 }
 
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav{
+    color: #9CBCAC;
+    font-size: 18px;
+    font-family: 'Paytone One', sans-serif;
+    margin: 20% 10% 10%5%;
+}
+.nav:hover{
+    color: white;
+}
+.nav:after{
+    color: white;
+    text-decoration: underline #9CBCAC;
+}
+
 /* FOOTER */
 footer{
     display: flex;
@@ -86,11 +105,6 @@ footer{
     align-items: center;
     justify-content: center;
 }
-
-
-p{
-    
-} 
 
 .btn:hover{
     color: white;

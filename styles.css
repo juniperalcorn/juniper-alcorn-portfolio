@@ -83,7 +83,7 @@ a{
     color: #9CBCAC;
     font-size: 18px;
     font-family: 'Paytone One', sans-serif;
-    margin: 20% 10% 10%5%;
+    margin: 15% 10% 10% 5%;
 }
 .nav:hover{
     color: white;
@@ -95,27 +95,43 @@ a{
 .sectionTitle{
     font-size: 18px;
     font-family: 'Paytone One', sans-serif;
-    color: #FFFFFF
+    color: #FFFFFF;
+    padding-bottom: 3%;
+}
+.research{
+    padding-top: 8%;
 }
 .skill{
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    text-align: end;
 }
 .skillTitle{
     padding: 0;
     color: #FFFFFF;
-    margin: 10px;
+    margin: 5px;
     width: 40%
 }
 .skillBar{
-    width: 60%;
+    width: 41%;
     height: 10px;
     border-radius: 15px;
     background-color: #82716A;
 }
+.high {
+    background-color: #EDD6CC;
+}
 .mid{
     width: 75%;
+    height: 10px;
+    border-radius: 15px;
+    background-color: #EDD6CC;
+}
+.low{
+    width: 43%;
     height: 10px;
     border-radius: 15px;
     background-color: #EDD6CC;

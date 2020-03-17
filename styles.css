@@ -92,6 +92,7 @@ a{
     color: white;
     text-decoration: underline #9CBCAC;
 }
+/* SKILLS */
 .sectionTitle{
     font-size: 18px;
     font-family: 'Paytone One', sans-serif;
@@ -113,7 +114,8 @@ a{
     padding: 0;
     color: #FFFFFF;
     margin: 5px;
-    width: 40%
+    width: 40%;
+    margin-right: 15px;
 }
 .skillBar{
     width: 41%;
@@ -181,36 +183,14 @@ footer{
     margin-bottom: 15%;
 }
 /* PAGES */
-/* ABOUT */
-#about{
-    background-image: url('assets/nyc.jpg');
-    margin: 13% auto;
-}
-#bio{
-    display: block;
-    background-color: black;
-    width: 50%;
-    margin: 3% auto;
-    margin-top: 8%;
-    border-left: 3px solid #215200;
-    border-bottom: 1px solid #215200;
-    padding: 2em;
-    border-radius: 30% 0 34% 0;
-}
-#bio h1{
-    text-align: center;
-}
-#bio h3{
-    text-align: center;
-}
 /* PORTFOLIO */
-#portfolio{
+/* #portfolio{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 15%;
-}
+} */
 #portfolio h1{
     margin-left: 2.5em;
     font-size: 3em;
@@ -253,73 +233,92 @@ footer{
 .projPic:hover{
     border: 2px solid #D240B2;
 }
+/* RESUME */
+#resumePic{
+    height: 100%;
+    width: 75%;
+    margin-top: 5%;
+    z-index: 1;
+}
+.hoveredResume{
+    object-fit: cover;
+    opacity: 0.6;  
+}
+#download{
+    display: flex;
+    height: 2.5em;
+    width: 13%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #0A4529;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    right: 13%;
+    top: 54%;
+}
+.visibleButton{
+    display: inline-block;
+}
+/* #download:hover{
+    display: block;
+    background-color: red;
+} */
 /* CONTACT */
 #contact{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    font-size: 1.5em;
-    border: 3px solid white;
-    padding: 1em;
-    align-items: center;
+    color: white;
+    padding-left: 12%;
+    text-align: left;
 }
-#contact p{
-    font-size: 2em;
-    text-align: center;
-    margin: 0;
-    margin-top: 5%;
+h2{
+    font-size: 32px;
+    /* text-align: left; */
+}
+#contactDetail{
+    font-size: 14px;
+    width: 90%
 }
 #contactForm{
     margin-left: 3em;
 }
+.form{
+    display: flex;
+    flex-direction: column;
+}
 form{
-    padding: 1em;
+    padding-top: 2em;
 }
 label{
-    width: 35%;
-    margin: 1em;
-    margin-left: 0;
+    font-size: 12px;
+    padding-bottom: 5px;
 }
 input, textarea{
     width: 75%;
     box-sizing: border-box;
-    border: 1px solid #215200;
-    margin-top: 1em;
+    border-radius: 5px;
+    border: 1px solid #9CBCAC;
     margin-bottom: 1.5em;
+    font-size: 16px;
 }
 input{
     height: 2em;
 }
-input:focus, textarea:focus{
-    border: 3px solid #D240B2;
-}
 textarea{
     vertical-align: top;
-    height: 5em;
-}
-.contactButton{
-    width: 80%;
-    border-left: 2px solid #215200;
-    border-bottom: 1px solid #215200;
-    height: 3em;
-    padding-bottom: .5em;
-    border-radius: 25% 0 34% 0;
-
+    height: 7em;
 }
 button{
-    margin-left: 3em;
-    margin-top: 10%;
-    height: 1.5em;
-    font-family: 'Gruppo', cursive;
-    font-size: 1em;
-    border-radius: 5%;
-    color: #D240B2;
-}
-button:hover{
-    border: 2px solid #D240B2;
+    height: 2.5em;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #EDD6CC;
+    color: #0A4529;
+    font-family: 'Open Sans', sans-serif;
 }
 
 

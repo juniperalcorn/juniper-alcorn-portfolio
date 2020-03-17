@@ -4,6 +4,10 @@ const portfolio = document.getElementById('portfolio')
 const contact = document.getElementById('contact')
 const header = document.getElementById('headerScroll')
 
+const resume = document.getElementById("resume")
+const resumePic = document.getElementById("resumePic")
+const downloadButton = document.getElementById("download")
+
 //navigation functions
 function findOffset(element) {
     let top = 300, left = 0;
@@ -34,3 +38,17 @@ window.onload = function () {
     }
 };
 }
+
+resumePic.addEventListener("mouseover", function(e){
+  downloadButton.classList.add("visibleButton")
+  resumePic.classList.add("hoveredResume")
+})
+
+resumePic.addEventListener("mouseout", function(e){
+  downloadButton.classList.remove("visibleButton")
+  resumePic.classList.remove("hoveredResume")
+})
+
+downloadButton.addEventListener("mouseover", function(e){
+  resumePic.classList.add("hoveredResume")
+})

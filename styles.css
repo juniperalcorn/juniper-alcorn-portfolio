@@ -92,6 +92,34 @@ a{
     color: white;
     text-decoration: underline #9CBCAC;
 }
+.sectionTitle{
+    font-size: 18px;
+    font-family: 'Paytone One', sans-serif;
+    color: #FFFFFF
+}
+.skill{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.skillTitle{
+    padding: 0;
+    color: #FFFFFF;
+    margin: 10px;
+    width: 40%
+}
+.skillBar{
+    width: 60%;
+    height: 10px;
+    border-radius: 15px;
+    background-color: #82716A;
+}
+.mid{
+    width: 75%;
+    height: 10px;
+    border-radius: 15px;
+    background-color: #EDD6CC;
+}
 
 /* FOOTER */
 footer{

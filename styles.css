@@ -1,7 +1,7 @@
 /* ELEMENTS */
 body, html {
     margin: 0;
-    font-family: 'Gruppo', cursive;
+    font-family: 'Open Sans', sans-serif;
     background-color: #EDD6CC;
     position: relative;
     scroll-behavior: smooth;
@@ -24,6 +24,11 @@ body {
     height: 100%;
     background-color: #EDD6CC;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding-left: 5%;
 }
 #center{
     width: 5%;
@@ -32,10 +37,41 @@ body {
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%,10% 90%);
 }
 #right{
-    width: 40%;
+    width: 41%;
     height: 100%;
     background-color: #0A4529;
     color: #EDD6CC;
+}
+h1{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 100px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    line-height: 88px;
+}
+.name{
+    margin: 10% 0 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+p {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding-top: 3%;
+    text-align: justify;
+}
+.linkContain{
+    display: inline-flex;
+    margin-top: 10%
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+a{
+    margin-right: 10%;
 }
 
 /* FOOTER */
@@ -53,16 +89,9 @@ footer{
 
 
 p{
-    text-align: justify;
+    
 } 
-a{
-    color: #D240B2;
-    text-decoration: none;
-    margin-bottom: 4%;
-}
-a:hover{
-    color: white;
-}
+
 .btn:hover{
     color: white;
 }

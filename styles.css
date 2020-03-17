@@ -234,6 +234,9 @@ footer{
     border: 2px solid #D240B2;
 }
 /* RESUME */
+#resume{
+    position: relative;
+}
 #resumePic{
     height: 100%;
     width: 75%;
@@ -244,10 +247,12 @@ footer{
     object-fit: cover;
     opacity: 0.6;  
 }
+#resumeContain{
+    position: relative;
+}
 #download{
-    display: flex;
     height: 2.5em;
-    width: 13%;
+    width: 30%;
     font-size: 14px;
     font-weight: 500;
     border-radius: 5px;
@@ -255,8 +260,8 @@ footer{
     color: white;
     font-family: 'Open Sans', sans-serif;
     position: absolute;
-    right: 13%;
-    top: 54%;
+    right: 33%;
+    top: 50%;
 }
 .visibleButton{
     display: inline-block;

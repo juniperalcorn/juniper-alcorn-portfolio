@@ -8,6 +8,8 @@ const resume = document.getElementById("resume")
 const resumePic = document.getElementById("resumePic")
 const downloadButton = document.getElementById("download")
 
+const githublinks=document.querySelectorAll(".screen")
+
 //navigation functions
 function findOffset(element) {
     let top = 300, left = 0;
@@ -51,4 +53,8 @@ resumePic.addEventListener("mouseout", function(e){
 
 downloadButton.addEventListener("mouseover", function(e){
   resumePic.classList.add("hoveredResume")
+})
+
+githublinks.addEventListener("mouseover", function(e){
+  githublinks.classList.add("hoveredResume")
 })

@@ -83,7 +83,7 @@ a{
     color: #9CBCAC;
     font-size: 18px;
     font-family: 'Paytone One', sans-serif;
-    margin: 15% 10% 10% 5%;
+    margin: 8% 10% 7% 5%;
 }
 .nav:hover{
     color: white;
@@ -184,54 +184,61 @@ footer{
 }
 /* PAGES */
 /* PORTFOLIO */
-/* #portfolio{
+#portfolio{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 15%;
-} */
-#portfolio h1{
-    margin-left: 2.5em;
-    font-size: 3em;
-    border-left: 2px solid #215200;
-    border-top: 1px solid #215200;
-    padding: 1em;
-    border-radius: 0 15% 0 15%;
-    margin-top: 0;
-    margin-bottom: 0;
+    flex-direction: column;
+    padding: 0 8%;
 }
-.portfolioContain{
+#portRow{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-left: 7%;
-    margin-top: 2%;
+    height: 35%;
+    width: 100%
+}
+.entry{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3%;
+}
+.wide{
+    width: 100%
+}
+.screen{
+    height: auto;
+    width: auto;
+    display: block;
+    max-width: 516px;
+    max-height: 300px;
+}
+.narrow{
+    max-width: 250px;
+    max-height: 200px; 
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+}
+.overlay{
+    background-color: #9CBCAC;
+    color: #0A4529;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 0;
+    padding: 1%;
+    font-weight: 800;
+    height: 53px;
+    align-items: center;
 }
 .project{
-    width: 35%;
-    margin: 5%;
-    border-top: 3px solid white;
-    border-right: 1px solid white;
-    padding: 1em;
+    text-decoration: none;
 }
-.project h2{
-    font-size: 2em;
-}
-.projectGit{
-    max-width: .5em;
-}
-.projectGit:hover{
-    border: 2px solid #D240B2;
-}
-.projPic{
-    width: 95%;
-    border: 1px solid white;
-    border-radius: 15px;
-}
-.projPic:hover{
-    border: 2px solid #D240B2;
+.portDesc{
+    color: #FFFFFF;
+    font-size: 10px;
+    text-align: center;
+    padding: 0 5%;
 }
 /* RESUME */
 #resume{

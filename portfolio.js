@@ -81,8 +81,8 @@ const goToContact = () => {
 
   skillButton.style.color="#9CBCAC"
   portButton.style.color="#9CBCAC"
-  resumeButton.style.color="white"
-  contactButton.style.color="#9CBCAC"
+  resumeButton.style.color="#9CBCAC"
+  contactButton.style.color="white"
 }
 
 const goToResume = () => {
@@ -93,8 +93,8 @@ const goToResume = () => {
 
   skillButton.style.color="#9CBCAC"
   portButton.style.color="#9CBCAC"
-  resumeButton.style.color="#9CBCAC"
-  contactButton.style.color="white"
+  resumeButton.style.color="white"
+  contactButton.style.color="#9CBCAC"
 }
 
 skillButton.addEventListener('click', goToSkills)

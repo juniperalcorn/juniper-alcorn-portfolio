@@ -94,6 +94,9 @@ a{
 }
 
 /* SKILLS */
+#skills{
+    width: 600px;
+}
 .sectionTitle{
     font-size: 18px;
     font-family: 'Paytone One', sans-serif;
@@ -203,7 +206,7 @@ footer{
     padding: 3%;
 }
 .wide{
-    width: 500px
+    width: 511px
 }
 .orbital{
     display: flex;
@@ -253,6 +256,7 @@ footer{
 /* RESUME */
 #resume{
     position: relative;
+    width: 600px;
 }
 #resumePic{
     height: 100%;
@@ -291,13 +295,14 @@ footer{
     color: white;
     padding-left: 12%;
     text-align: left;
+    width: 600px;
 }
 h2{
     font-size: 32px;
 }
 #contactDetail{
     font-size: 14px;
-    width: 90%
+    width: 80%
 }
 #contactForm{
     margin-left: 3em;

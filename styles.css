@@ -97,6 +97,9 @@ a{
 #skills{
     width: 600px;
 }
+#skillButton{
+    color: white;
+}
 .sectionTitle{
     font-size: 18px;
     font-family: 'Paytone One', sans-serif;
@@ -189,7 +192,8 @@ footer{
 /* PAGES */
 /* PORTFOLIO */
 #portfolio{
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: column;
     padding: 0 8%;
 }
@@ -255,6 +259,7 @@ footer{
 }
 /* RESUME */
 #resume{
+    display: none;
     position: relative;
     width: 600px;
 }
@@ -290,7 +295,8 @@ footer{
 
 /* CONTACT */
 #contact{
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: column;
     color: white;
     padding-left: 12%;

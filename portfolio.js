@@ -3,6 +3,13 @@ const about = document.getElementById('about')
 const portfolio = document.getElementById('portfolio')
 const contact = document.getElementById('contact')
 const header = document.getElementById('headerScroll')
+const skills = document.getElementById('skills')
+
+//nav
+const skillButton = document.getElementById('skillButton')
+const portButton = document.getElementById('portButton')
+const resumeButton = document.getElementById('resumeButton')
+const contactButton = document.getElementById('contactButton')
 
 const resume = document.getElementById("resume")
 const resumePic = document.getElementById("resumePic")
@@ -27,6 +34,7 @@ function findOffset(element) {
 }
   
 window.onload = function () {
+    goToSkills()
     let stickyHeader = document.getElementById('headerScroll');
     let headerOffset = findOffset(stickyHeader);
     window.onscroll = function() {
@@ -41,6 +49,60 @@ window.onload = function () {
 };
 }
 
+const goToSkills = () => {
+  skills.style.display="block"
+  portfolio.style.display="none"
+  contact.style.display="none"
+  resume.style.display="none"
+
+  skillButton.style.color="white"
+  portButton.style.color="#9CBCAC"
+  resumeButton.style.color="#9CBCAC"
+  contactButton.style.color="#9CBCAC"
+}
+
+const goToPortfolio = () => {
+  skills.style.display="none"
+  portfolio.style.display="flex"
+  contact.style.display="none"
+  resume.style.display="none"
+
+  skillButton.style.color="#9CBCAC"
+  portButton.style.color="white"
+  resumeButton.style.color="#9CBCAC"
+  contactButton.style.color="#9CBCAC"
+}
+
+const goToContact = () => {
+  skills.style.display="none"
+  portfolio.style.display="none"
+  contact.style.display="flex"
+  resume.style.display="none"
+
+  skillButton.style.color="#9CBCAC"
+  portButton.style.color="#9CBCAC"
+  resumeButton.style.color="white"
+  contactButton.style.color="#9CBCAC"
+}
+
+const goToResume = () => {
+  skills.style.display="none"
+  portfolio.style.display="none"
+  contact.style.display="none"
+  resume.style.display="block"
+
+  skillButton.style.color="#9CBCAC"
+  portButton.style.color="#9CBCAC"
+  resumeButton.style.color="#9CBCAC"
+  contactButton.style.color="white"
+}
+
+skillButton.addEventListener('click', goToSkills)
+portButton.addEventListener('click', goToPortfolio)
+contactButton.addEventListener('click', goToContact)
+resumeButton.addEventListener('click', goToResume)
+
+//RESUME
 resumePic.addEventListener("mouseover", function(e){
   downloadButton.classList.add("visibleButton")
   resumePic.classList.add("hoveredResume")

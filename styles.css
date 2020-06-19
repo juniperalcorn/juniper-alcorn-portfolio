@@ -88,10 +88,11 @@ a{
 .nav:hover{
     color: white;
 }
-.nav:after{
+.nav:focus{
     color: white;
     text-decoration: underline #9CBCAC;
 }
+
 /* SKILLS */
 .sectionTitle{
     font-size: 18px;

@@ -34,7 +34,6 @@ function findOffset(element) {
 }
   
 window.onload = function () {
-    goToSkills()
     let stickyHeader = document.getElementById('headerScroll');
     let headerOffset = findOffset(stickyHeader);
     window.onscroll = function() {

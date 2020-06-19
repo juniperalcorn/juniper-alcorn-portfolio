@@ -193,7 +193,7 @@ footer{
     display: flex;
     flex-direction: row;
     height: 35%;
-    width: 100%
+    width: 95%
 }
 .entry{
     display: flex;
@@ -202,6 +202,11 @@ footer{
     padding: 3%;
 }
 .wide{
+    width: 500px
+}
+.orbital{
+    display: flex;
+    flex-direction: column;
     width: 100%
 }
 .screen{
@@ -212,12 +217,19 @@ footer{
     max-height: 300px;
 }
 .narrow{
-    max-width: 250px;
+    width: 100%;
     max-height: 200px; 
 }
 .photo{
     display: flex;
     flex-direction: column;
+    width: 250px;
+}
+.photo a{
+    margin-right: 0;
+}
+.githubLink{
+    text-decoration: none;
 }
 .overlay{
     background-color: #9CBCAC;
@@ -230,9 +242,6 @@ footer{
     font-weight: 800;
     height: 53px;
     align-items: center;
-}
-.project{
-    text-decoration: none;
 }
 .portDesc{
     color: #FFFFFF;
@@ -273,10 +282,7 @@ footer{
 .visibleButton{
     display: inline-block;
 }
-/* #download:hover{
-    display: block;
-    background-color: red;
-} */
+
 /* CONTACT */
 #contact{
     display: flex;
@@ -287,7 +293,6 @@ footer{
 }
 h2{
     font-size: 32px;
-    /* text-align: left; */
 }
 #contactDetail{
     font-size: 14px;

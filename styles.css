@@ -20,7 +20,7 @@ body {
 
 #left{
     color: #0A4529;
-    width: 54%;
+    width: 44%;
     height: 100%;
     background-color: #EDD6CC;
     height: 100%;
@@ -29,6 +29,7 @@ body {
     align-items: flex-start;
     justify-content: start;
     padding-left: 5%;
+    overflow: scroll;
 }
 #center{
     width: 5%;
@@ -37,10 +38,11 @@ body {
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%,10% 90%);
 }
 #right{
-    width: 41%;
+    width: 51%;
     height: 100%;
     background-color: #0A4529;
     color: #EDD6CC;
+    overflow: scroll;
 }
 h1{
     font-family: 'Paytone One', sans-serif;
@@ -49,6 +51,9 @@ h1{
     margin-bottom: 10px;
     padding: 0;
     line-height: 88px;
+}
+h2{
+    text-align: left;
 }
 .name{
     margin: 10% 0 5% 0;
@@ -78,6 +83,8 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 90%;
+    padding-bottom: 5%;
 }
 .nav{
     color: #9CBCAC;
@@ -95,7 +102,7 @@ a{
 
 /* SKILLS */
 #skills{
-    width: 600px;
+    /*width: 600px*/
 }
 #skillButton{
     color: white;
@@ -221,7 +228,7 @@ footer{
     height: auto;
     width: auto;
     display: block;
-    max-width: 516px;
+    max-width: 436px;
     max-height: 300px;
 }
 .narrow{
@@ -231,7 +238,7 @@ footer{
 .photo{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 203px;
 }
 .photo a{
     margin-right: 0;
@@ -261,7 +268,7 @@ footer{
 #resume{
     display: none;
     position: relative;
-    width: 600px;
+    /*width: 600px*/
 }
 #resumePic{
     height: 100%;
@@ -301,7 +308,7 @@ footer{
     color: white;
     padding-left: 12%;
     text-align: left;
-    width: 600px;
+    /*width: 600px*/
 }
 h2{
     font-size: 32px;

@@ -371,6 +371,9 @@ h1{
     width: 100%;
     padding-left: 0;
 }
+#right{
+    height: 62vh;
+}
 #mobileNav{
     display: flex;
     flex-direction: row;
@@ -385,9 +388,70 @@ h1{
     justify-content: space-evenly;
     margin: 0 auto;
 }
-.navBar{
+#aboutMobile{
+    /* display: block; */
+    display: none;
+    padding: 2% 2% 2% 13%;
+    overflow-y: scroll;
+}
+#skillsMobile{
+    /* display: block; */
+    display: none;
+    height: 100%;
+    margin: 2%;
+    margin-bottom: 9%;
+    padding-top: 5%;
+}
+#research{
+    height: 80%;
+}
+#portfolioMobile{
+    display: block;
+    /* display: none; */
+}
+/* RESUME */
+#resumeMobile{
+    /* display: flex; */
+    flex-direction: column;
     display: none;
 }
+#resumePic{
+    margin: 5% auto;
+    z-index: 0;
+}
+#download{
+    width: 66%;
+    position: unset;
+}
+form{
+    padding-top: 0;
+}
+/* CONTACT */
+#contactMobile{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    margin-left: 5%;
+    width: 100%;
+}
+#contactDetail{
+    text-align: left;
+}
+.form{
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 1em;
+    width: 90%;
+}
+label{
+    width: 100px;
+    text-align: left;
+}
+input{
+
+}
+
 .name{
     margin: 0;
 }

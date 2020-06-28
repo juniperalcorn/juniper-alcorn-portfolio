@@ -4,7 +4,6 @@ const portfolio = document.getElementById('portfolio')
 const contact = document.getElementById('contact')
 const header = document.getElementById('headerScroll')
 const skills = document.getElementById('skills')
-
 //nav
 const skillButton = document.getElementById('skillButton')
 const portButton = document.getElementById('portButton')
@@ -48,6 +47,7 @@ window.onload = function () {
 };
 }
 
+//fullscreen nav
 const goToSkills = () => {
   skills.style.display="block"
   portfolio.style.display="none"
@@ -119,3 +119,92 @@ downloadButton.addEventListener("mouseover", function(e){
 githublinks.addEventListener("mouseover", function(e){
   githublinks.classList.add("hoveredResume")
 })
+
+//mobilePages
+const aboutMobile = document.getElementById('aboutMobile')
+const portfolioMobile = document.getElementById('portfolioMobile')
+const contactMobile = document.getElementById('contactMobile')
+const resumeMobile = document.getElementById('resumeMobile')
+const skillsMobile = document.getElementById('skillsMobile')
+//mobile nav
+const mobileAboutButton = document.getElementById('aboutButtonMobile')
+const mobileSkillButton = document.getElementById('skillButtonMobile')
+const mobilePortButton = document.getElementById('portButtonMobile')
+const mobileResumeButton= document.getElementById('resumeButtonMobile')
+const mobileContactButton= document.getElementById('contactButtonMobile')
+//mobile nav functions
+const goToMobileAbout = () => {
+  aboutMobile.style.display="block"
+  skillsMobile.style.display="none"
+  portfolioMobile.style.display="none"
+  contactMobile.style.display="none"
+  resumeMobile.style.display="none"
+
+  mobileAboutButton.style.color="white"
+  mobileSkillButton.style.color="#9CBCAC"
+  mobilePortButton.style.color="#9CBCAC"
+  mobileResumeButton.style.color="#9CBCAC"
+  mobileContactButton.style.color="#9CBCAC"
+}
+const goToMobileSkills = () => {
+  aboutMobile.style.display="none"
+  skillsMobile.style.display="block"
+  portfolioMobile.style.display="none"
+  contactMobile.style.display="none"
+  resumeMobile.style.display="none"
+
+  mobileAboutButton.style.color="#9CBCAC"
+  mobileSkillButton.style.color="white"
+  mobilePortButton.style.color="#9CBCAC"
+  mobileResumeButton.style.color="#9CBCAC"
+  mobileContactButton.style.color="#9CBCAC"
+}
+
+const goToMobilePortfolio = () => {
+  aboutMobile.style.display="none"
+  skillsMobile.style.display="none"
+  portfolioMobile.style.display="flex"
+  contactMobile.style.display="none"
+  resumeMobile.style.display="none"
+
+  mobileAboutButton.style.color="#9CBCAC"
+  mobileSkillButton.style.color="#9CBCAC"
+  mobilePortButton.style.color="white"
+  mobileResumeButton.style.color="#9CBCAC"
+  mobileContactButton.style.color="#9CBCAC"
+}
+
+const goToMobileContact = () => {
+  aboutMobile.style.display="none"
+  skillsMobile.style.display="none"
+  portfolioMobile.style.display="none"
+  contactMobile.style.display="flex"
+  resumeMobile.style.display="none"
+
+  mobileAboutButton.style.color="#9CBCAC"
+  mobileSkillButton.style.color="#9CBCAC"
+  mobilePortButton.style.color="#9CBCAC"
+  mobileResumeButton.style.color="#9CBCAC"
+  mobileContactButton.style.color="white"
+}
+
+const goToMobileResume = () => {
+  aboutMobile.style.display="none"
+  skillsMobile.style.display="none"
+  portfolioMobile.style.display="none"
+  contactMobile.style.display="none"
+  resumeMobile.style.display="block"
+
+  mobileAboutButton.style.color="#9CBCAC"
+  mobileSkillButton.style.color="#9CBCAC"
+  mobilePortButton.style.color="#9CBCAC"
+  mobileResumeButton.style.color="white"
+  mobileContactButton.style.color="#9CBCAC"
+}
+
+
+mobileAboutButton.addEventListener('click', goToMobileAbout)
+mobileSkillButton.addEventListener('click', goToMobileSkills)
+mobilePortButton.addEventListener('click', goToMobilePort)
+mobileResumeButton.addEventListener('click', goToMobileResume)
+mobileContactButton.addEventListener('click', goToMobileContact)

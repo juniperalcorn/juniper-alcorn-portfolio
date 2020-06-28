@@ -134,6 +134,7 @@ const mobileResumeButton= document.getElementById('resumeButtonMobile')
 const mobileContactButton= document.getElementById('contactButtonMobile')
 //mobile nav functions
 const goToMobileAbout = () => {
+  console.log("go to about")
   aboutMobile.style.display="block"
   skillsMobile.style.display="none"
   portfolioMobile.style.display="none"
@@ -147,6 +148,7 @@ const goToMobileAbout = () => {
   mobileContactButton.style.color="#9CBCAC"
 }
 const goToMobileSkills = () => {
+  console.log("go to skills")
   aboutMobile.style.display="none"
   skillsMobile.style.display="block"
   portfolioMobile.style.display="none"
@@ -161,6 +163,7 @@ const goToMobileSkills = () => {
 }
 
 const goToMobilePortfolio = () => {
+  console.log("go to portfolio")
   aboutMobile.style.display="none"
   skillsMobile.style.display="none"
   portfolioMobile.style.display="flex"
@@ -175,6 +178,7 @@ const goToMobilePortfolio = () => {
 }
 
 const goToMobileContact = () => {
+  console.log("go to contact")
   aboutMobile.style.display="none"
   skillsMobile.style.display="none"
   portfolioMobile.style.display="none"
@@ -189,11 +193,12 @@ const goToMobileContact = () => {
 }
 
 const goToMobileResume = () => {
+  console.log("go to resume")
   aboutMobile.style.display="none"
   skillsMobile.style.display="none"
   portfolioMobile.style.display="none"
   contactMobile.style.display="none"
-  resumeMobile.style.display="block"
+  resumeMobile.style.display="flex"
 
   mobileAboutButton.style.color="#9CBCAC"
   mobileSkillButton.style.color="#9CBCAC"
@@ -205,6 +210,6 @@ const goToMobileResume = () => {
 
 mobileAboutButton.addEventListener('click', goToMobileAbout)
 mobileSkillButton.addEventListener('click', goToMobileSkills)
-mobilePortButton.addEventListener('click', goToMobilePort)
+mobilePortButton.addEventListener('click', goToMobilePortfolio)
 mobileResumeButton.addEventListener('click', goToMobileResume)
 mobileContactButton.addEventListener('click', goToMobileContact)

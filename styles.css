@@ -372,7 +372,7 @@ h1{
     padding-left: 0;
 }
 #right{
-    height: 62vh;
+    height: 60vh;
 }
 #mobileNav{
     display: flex;
@@ -405,9 +405,18 @@ h1{
 #research{
     height: 80%;
 }
+/* PORTFOLIO */
 #portfolioMobile{
-    display: block;
-    /* display: none; */
+    /* display: block; */
+    display: none;
+    padding-top: 5%;
+}
+.entry{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 3%;
+    margin: 0 auto;
 }
 /* RESUME */
 #resumeMobile{

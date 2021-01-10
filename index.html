@@ -24,16 +24,20 @@
 
 <body>
 
-<div id="contain">
+<div id="mainContain">
     <div id="left">
-        <div class="name">
-            <h1>Juniper</h1>
-            <h1>Alcorn</h1>
+        <div id="title">
+            <div class="name">
+                <h1>Juniper</h1>
+                <h1>Alcorn</h1>
+            </div>
         </div>
         <h2>Software Engineer & Social Researcher</h2>
-        <p>My objective as an engineer and a philosopher is to learn new things, structure that knowledge, and share it effectively with others--whether that is in the form of impactful features improving performance and experience, or as a seminar and paper. I am driven by complex questions with multiple stakeholders, and work to creative inclusive and practical solutions that push product forward.</p>
-        <p>I received a PhD in Philosophy from the New School for Social Research for my dissertation, <i>Pregnancy Beyond the Natural</i>. My research, as well as six years' experience teaching undergraduate philosophy courses, motivates my interest in tech's impact on health and the body.</p>
-        <p>Outside of work, I love sci-fi, ornate baking projects, and weight lifting.</p>
+        <div id="about">
+            <p>My objective as an engineer and a philosopher is to learn new things, structure that knowledge, and share it effectively with others--whether that is in the form of impactful features improving performance and experience, or as a seminar and paper. I am driven by complex questions with multiple stakeholders, and work to creative inclusive and practical solutions that push product forward.</p>
+            <p>I received a PhD in Philosophy from the New School for Social Research for my dissertation, <i>Pregnancy Beyond the Natural</i>. My research, as well as six years' experience teaching undergraduate philosophy courses, motivates my interest in tech's impact on health and the body.</p>
+            <p>Outside of work, I love sci-fi, ornate baking projects, and weight lifting.</p>
+        </div>
         <div class="linkContain">
             <a href="/linkedin" target="_blank" rel="noopener">
                 <img src="assets/LI@2x.png" alt="LinkedIn"/>
@@ -212,6 +216,225 @@
         </div>
 
         <div id="contact">
+            <h2>Contact Me</h2>
+            <span id="contactDetail">
+                Please use the form below to get in touch. I'm always happy to expand my network and relish the opportunity to discuss technology, algorithms, and/or cats.
+            </span>
+            <form name='contact' method='POST' data-netlify='true'>
+                <div class="form" id='name'>
+                    <label for='contactName'>Your name</label>
+                    <input id='contactName' name='name' type='text'>
+                </div>
+        
+                <div class="form" id='email'>
+                    <label for='contactEmail'>The best email address to reach you at</label>
+                    <input id='contactEmail' name='email' type='text'>
+                </div>
+                
+                <div class="form" id='msg'>
+                    <label for='contactMsg'>What are you interested in discussing?</label>
+                    <textarea id='contactMsg' name='msg'></textarea>
+                </div>
+                <div class='contactButton'>
+                    <button type='submit'>SUBMIT</button>
+                </div>
+                </div>
+        
+                </form>
+            </div>
+
+    </div>
+</div>
+
+<div id="mobileContain">
+    <div id="left">
+        <div id="title">
+            <div class="name">
+                <h1>Juniper</h1>
+                <h1>Alcorn</h1>
+            </div>  
+        </div>
+        <div class="linkContain">
+            <div class="h2">Software Engineer & Social Researcher</div>
+            <div class="imgContain">
+                <a href="www.linkedin.com/in/juniper-alcorn">
+                    <img src="assets/LI@2x.png" alt="LinkedIn" class="icon"/>
+                </a>
+                <a href="www.github.com/juniperalcorn">
+                    <img src="assets/GH@2x.png" alt="GitHub" class="icon"/>
+                </a>
+            </div>
+        </div>
+
+        <div id="mobileNav">
+            <div class="nav" id="aboutButtonMobile">About</div>
+            <div class="nav" id="skillButtonMobile">Skills</div>
+            <div class="nav" id="portButtonMobile">Portfolio</div>
+            <div class="nav" id="resumeButtonMobile">Resumé</div>
+            <div class="nav" id="contactButtonMobile">Contact</div>
+        </div>
+    </div>
+    <div id="mobileContent">
+        <div id="aboutMobile">
+            <p>My objective as an engineer and a philosopher is to learn new things, structure that knowledge, and share it effectively with others--whether that is in the form of impactful features improving performance and experience, or as a seminar and paper. I am driven by complex questions with multiple stakeholders, and work to creative inclusive and practical solutions that push product forward.</p>
+            <p>I received a PhD in Philosophy from the New School for Social Research for my dissertation, <i>Pregnancy Beyond the Natural</i>. My research, as well as six years' experience teaching undergraduate philosophy courses, motivates my interest in tech's impact on health and the body.</p>
+            <p>Outside of work, I love sci-fi, ornate baking projects, and weight lifting.</p>
+        </div>
+        <div id="skillsMobile">
+            <div id="programming">
+                <div class="sectionTitle" id="itemTitle1">Programming</div>
+                <div class="skill" id="item1">
+                    <span class="skillTitle">JavaScript & Node.js</span> 
+                    <div class="skillBar">
+                        <div class="mid"></div>
+                    </div>
+                </div>
+                <div class="skill" id="item2">
+                    <span class="skillTitle">React.js</span> 
+                    <div class="skillBar">
+                        <div class="mid"></div>
+                    </div>
+                </div>
+                <div class="skill" id="item3">
+                    <span class="skillTitle">GraphQL & Apollo</span> 
+                    <div class="skillBar">
+                        <div class="mid"></div>
+                    </div>
+                </div>
+                <div class="skill" id="item4">
+                    <span class="skillTitle">HTML & CSS</span> 
+                    <div class="skillBar">
+                        <div class="mid"></div>
+                    </div>
+                </div>
+                <div class="skill" id="item5">
+                    <span class="skillTitle">MaterialUI</span> 
+                    <div class="skillBar">
+                        <div class="mid"></div>
+                    </div>
+                </div>
+                <div class="skill" id="item6">
+                    <span class="skillTitle">PostgreSQL</span> 
+                    <div class="skillBar">
+                        <div class="low"></div>
+                    </div>
+                </div>
+                <div class="skill" id="item7">
+                    <span class="skillTitle">Django</span> 
+                    <div class="skillBar">
+                        <div class="low"></div>
+                    </div>
+                </div>
+                <div class="skill" id="item8">
+                    <span class="skillTitle">Python</span> 
+                    <div class="skillBar">
+                        <div class="low"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="research">
+                <div class="sectionTitle research">Research</div>
+                <div>
+                    <div class="skill">
+                        <span class="skillTitle">Qualitative Research</span>
+                        <div class="skillBar high"></div>
+                    </div>
+                    <div class="skill">
+                        <span class="skillTitle">Social Research</span>
+                        <div class="skillBar high"></div>
+                    </div>
+                    <div class="skill">
+                        <span class="skillTitle">Data Analysis</span>
+                        <div class="skillBar">
+                            <div class="mid"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skillTitle">Writing & Editing</span>
+                        <div class="skillBar high"></div>
+                    </div>
+                    <div class="skill">
+                        <span class="skillTitle">Translation</span>
+                        <div class="skillBar">
+                            <div class="mid"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skillTitle">Presentations & Public Speaking</span>
+                        <div class="skillBar high"></div>
+                    </div>
+                    <div class="skill">
+                        <span class="skillTitle">Project Management</span>
+                        <div class="skillBar">
+                            <div class="mid"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+
+        <div id="portfolioMobile">
+            <div class="entry">
+                <div class="orbital">
+                    <img src="assets/orbitalScreenShot.jpg" alt="OrbitalRX ScreenShot" class="screen"/>
+                    <div class="overlay">
+                        React.js, GraphQL, Django, GoLang, PostgreSQL, MaterialUI
+                    </div>
+                </div>
+                <p class="portDesc">
+                    OrbitalRx is the only platform designed to unify hospital pharmacy data and proactively manage drug shortages, bringing users the power of real-time situational awareness in a pharmacy-focused workflow. As a Software Developer, I create intuitive UIs with complex functionality, and contribute to all user-facing experiences.
+                </p>
+            </div>
+            <div class="entry">
+                <div class="orbital">
+
+                    <a href="http://mypillbox.surge.sh/" target="_blank">
+                        <img src="assets/PillBoxSmall.png" alt="myPillBox ScreenShot" class="screen narrow"/>
+                    </a>
+                    <div class="overlay">
+                        <a class="githubLink" href="https://github.com/juniperalcorn/myPillBox" target="_blank">
+                            React.js, RubyOnRails, PostgreSQL, CSS
+                        </a>
+                    </div>
+                </div>
+                <p class="portDesc">
+                    myPillBox is a digital pill box and daily medication organizer app built with custom b-cryptt auth. At a glance, myPillBox provides the time of day and intuitive navigation to time-of-day medication lists, or a complete list of doses (with photos) for each prescription.
+                </p>
+                
+            </div>
+            <div class="entry">
+                <div class="orbital">
+
+                    <a href="https://juniperalcorn.github.io/kitty…" target="_blank">
+                        <img src="assets/kittyjunglesmall.png" alt="Kitty Jungle ScreenShot" class="screen narrow"/>
+                    </a>
+                    <div class="overlay">
+                        <a class="githubLink" href="https://github.com/juniperalcorn/kitty-jungle" target="_blank">
+                            Vanilla JS, HTML, CSS
+                        </a>
+                    </div>
+                </div>
+                <p class="portDesc">
+                    Kitty Jungle is a single-player game where players carefully befriend feral cats by petting them (clicking on them). The object is to pet the cat enough to make friends, but not so much as to overstimulate the cat. Kitty Jungle is best viewed on a desktop.
+                </p>
+            </div>
+
+        </div>
+
+        <div id="resumeMobile">
+            <img id="resumePic" alt="Resume" src="assets/ResumePicJPEG.jpg"/>
+            <div>
+                <form method="get" action="assets/JuniperAlcorn_resume3-3.pdf" target="_blank">
+                    <button type="submit" id="download">
+                        <i class="fas fa-download"></i>
+                        DOWNLOAD
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div id="contactMobile">
             <h2>Contact Me</h2>
             <span id="contactDetail">
                 Please use the form below to get in touch. I'm always happy to expand my network and relish the opportunity to discuss technology, algorithms, and/or cats.

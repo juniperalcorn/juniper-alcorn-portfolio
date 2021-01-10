@@ -1,0 +1,7 @@
+# Redirects from what the browser requests to what we serve
+/pillboxDeploy              http://mypillbox.surge.sh/
+/pillboxGithub              https://github.com/juniperalcorn/myPillBox
+/kittyDeploy                https://juniperalcorn.github.io/kitty-jungle/
+/kittyGithub                https://github.com/juniperalcorn/kitty-jungle
+/linkedin                   www.linkedin.com/in/juniper-alcorn
+/github                     www.github.com/juniperalcorn

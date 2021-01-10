@@ -34,15 +34,17 @@ function findOffset(element) {
   
 window.onload = function () {
     let stickyHeader = document.getElementById('headerScroll');
-    let headerOffset = findOffset(stickyHeader);
-    window.onscroll = function() {
-        // body.scrollTop is deprecated and no longer available on Firefox
-        const bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if (stickyHeader){
+      let headerOffset = findOffset(stickyHeader);
+      window.onscroll = function() {
+          // body.scrollTop is deprecated and no longer available on Firefox
+          const bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-        if (bodyScrollTop > headerOffset.top) {
-        stickyHeader.classList.add('fixed');
-        } else {
-        stickyHeader.classList.remove('fixed');
+          if (bodyScrollTop > headerOffset.top) {
+          stickyHeader.classList.add('fixed');
+          } else {
+          stickyHeader.classList.remove('fixed');
+      }
     }
 };
 }
@@ -116,9 +118,9 @@ downloadButton.addEventListener("mouseover", function(e){
   resumePic.classList.add("hoveredResume")
 })
 
-githublinks.addEventListener("mouseover", function(e){
-  githublinks.classList.add("hoveredResume")
-})
+githublinks.forEach(link => link.addEventListener("mouseover", function(e){
+  link.classList.add("hoveredResume")
+}))
 
 //mobilePages
 const aboutMobile = document.getElementById('aboutMobile')
@@ -134,7 +136,6 @@ const mobileResumeButton= document.getElementById('resumeButtonMobile')
 const mobileContactButton= document.getElementById('contactButtonMobile')
 //mobile nav functions
 const goToMobileAbout = () => {
-  console.log("go to about")
   aboutMobile.style.display="block"
   skillsMobile.style.display="none"
   portfolioMobile.style.display="none"
@@ -142,71 +143,66 @@ const goToMobileAbout = () => {
   resumeMobile.style.display="none"
 
   mobileAboutButton.style.color="white"
-  mobileSkillButton.style.color="#9CBCAC"
-  mobilePortButton.style.color="#9CBCAC"
-  mobileResumeButton.style.color="#9CBCAC"
-  mobileContactButton.style.color="#9CBCAC"
+  mobileSkillButton.style.color="#0A4529"
+  mobilePortButton.style.color="#0A4529"
+  mobileResumeButton.style.color="#0A4529"
+  mobileContactButton.style.color="#0A4529"
 }
 const goToMobileSkills = () => {
-  console.log("go to skills")
   aboutMobile.style.display="none"
   skillsMobile.style.display="block"
   portfolioMobile.style.display="none"
   contactMobile.style.display="none"
   resumeMobile.style.display="none"
 
-  mobileAboutButton.style.color="#9CBCAC"
+  mobileAboutButton.style.color="#0A4529"
   mobileSkillButton.style.color="white"
-  mobilePortButton.style.color="#9CBCAC"
-  mobileResumeButton.style.color="#9CBCAC"
-  mobileContactButton.style.color="#9CBCAC"
+  mobilePortButton.style.color="#0A4529"
+  mobileResumeButton.style.color="#0A4529"
+  mobileContactButton.style.color="#0A4529"
 }
 
 const goToMobilePortfolio = () => {
-  console.log("go to portfolio")
   aboutMobile.style.display="none"
   skillsMobile.style.display="none"
   portfolioMobile.style.display="flex"
   contactMobile.style.display="none"
   resumeMobile.style.display="none"
 
-  mobileAboutButton.style.color="#9CBCAC"
-  mobileSkillButton.style.color="#9CBCAC"
+  mobileAboutButton.style.color="#0A4529"
+  mobileSkillButton.style.color="#0A4529"
   mobilePortButton.style.color="white"
-  mobileResumeButton.style.color="#9CBCAC"
-  mobileContactButton.style.color="#9CBCAC"
+  mobileResumeButton.style.color="#0A4529"
+  mobileContactButton.style.color="#0A4529"
 }
 
 const goToMobileContact = () => {
-  console.log("go to contact")
   aboutMobile.style.display="none"
   skillsMobile.style.display="none"
   portfolioMobile.style.display="none"
   contactMobile.style.display="flex"
   resumeMobile.style.display="none"
 
-  mobileAboutButton.style.color="#9CBCAC"
-  mobileSkillButton.style.color="#9CBCAC"
-  mobilePortButton.style.color="#9CBCAC"
-  mobileResumeButton.style.color="#9CBCAC"
+  mobileAboutButton.style.color="#0A4529"
+  mobileSkillButton.style.color="#0A4529"
+  mobilePortButton.style.color="#0A4529"
+  mobileResumeButton.style.color="#0A4529"
   mobileContactButton.style.color="white"
 }
 
 const goToMobileResume = () => {
-  console.log("go to resume")
   aboutMobile.style.display="none"
   skillsMobile.style.display="none"
   portfolioMobile.style.display="none"
   contactMobile.style.display="none"
   resumeMobile.style.display="flex"
 
-  mobileAboutButton.style.color="#9CBCAC"
-  mobileSkillButton.style.color="#9CBCAC"
-  mobilePortButton.style.color="#9CBCAC"
+  mobileAboutButton.style.color="#0A4529"
+  mobileSkillButton.style.color="#0A4529"
+  mobilePortButton.style.color="#0A4529"
   mobileResumeButton.style.color="white"
-  mobileContactButton.style.color="#9CBCAC"
+  mobileContactButton.style.color="#0A4529"
 }
-
 
 mobileAboutButton.addEventListener('click', goToMobileAbout)
 mobileSkillButton.addEventListener('click', goToMobileSkills)

@@ -371,8 +371,11 @@ h1{
     width: 100%;
     padding-left: 0;
 }
-#right{
+#mobileContent{
     height: 60vh;
+    background-color: #0A4529;
+    color: #EDD6CC;
+    overflow: scroll;
 }
 #mobileNav{
     display: flex;
@@ -389,13 +392,17 @@ h1{
     margin: 0 auto;
 }
 #aboutMobile{
-    /* display: block; */
-    display: none;
+    display: block;
     padding: 2% 2% 2% 13%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+}
+#aboutButtonMobile{
+    color: white;
+}
+p{
+    width: 70%;
 }
 #skillsMobile{
-    /* display: block; */
     display: none;
     height: 100%;
     margin: 2%;
@@ -405,6 +412,7 @@ h1{
 #research{
     height: 80%;
 }
+
 /* PORTFOLIO */
 #portfolioMobile{
     /* display: block; */
@@ -425,7 +433,7 @@ h1{
     display: none;
 }
 #resumePic{
-    margin: 5% auto;
+    margin: 3% auto;
     z-index: 0;
 }
 #download{

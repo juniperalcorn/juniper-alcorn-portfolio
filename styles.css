@@ -520,49 +520,11 @@ footer{
 }
 
 /* PORTFOLIO */
-#portfolio{
+#portfolioMobile{
     display: flex;
     flex-direction: column;
-    flex-wrap: none;
-    margin: 0 auto;
-    margin-left: 0;
-    margin-top: 5%;
 }
-#portfolio h1{
-    margin-left: 1em;
-    font-size: 2em;
-    border-left: 2px solid #215200;
-    border-top: 1px solid #215200;
-    padding: 1em;
-    border-radius: 0 15% 0 15%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.portfolioContain{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: none;
-    margin: 0 auto;
-    margin-left: 1%;
-    margin-top: 2%;
-}
-.project{
-    width: 85%;
-    margin: 5%;
-    border-top: 3px solid white;
-    border-right: 1px solid white;
-    padding: 1em;
-}
-.project h2{
-    font-size: 1.75em;
-}
-#contactForm{
-    margin-left: 0;
-}
-.contactButton{
-    width: 100%;
-}
-.contactButton button{
-    margin-left: 1em;
+.portDesc{
+    width: auto;
 }
 }

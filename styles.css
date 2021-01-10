@@ -385,7 +385,6 @@ h1{
     padding-left: 0;
     width: 100%;
 }
-/* need to fix functions for media query */
 .nav{
     color: #0A4529;
     justify-content: space-evenly;
@@ -394,7 +393,6 @@ h1{
 #aboutMobile{
     display: block;
     padding: 2% 2% 2% 13%;
-    /* overflow-y: scroll; */
 }
 #aboutButtonMobile{
     color: white;
@@ -415,7 +413,6 @@ p{
 
 /* PORTFOLIO */
 #portfolioMobile{
-    /* display: block; */
     display: none;
     padding-top: 5%;
 }
@@ -428,7 +425,6 @@ p{
 }
 /* RESUME */
 #resumeMobile{
-    /* display: flex; */
     flex-direction: column;
     display: none;
 }
